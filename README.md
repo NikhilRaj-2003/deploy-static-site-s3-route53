@@ -7,9 +7,9 @@
 
 by [Nikhil Raj A](https://medium.com/@nikhilsiri2003?source=post_page---byline--01afdfbe5495---------------------------------------)
 
-**Introduction
+**Introduction**
 
-**Amazon Simple Storage Service (S3) is a scalable, secure, and highly available cloud storage service provided by AWS. One of its powerful features is the ability to host static websites directly from an S3 bucket, making it an excellent choice for developers looking for a cost-effective and serverless hosting solution.
+**Amazon Simple Storage Service (S3)** is a scalable, secure, and highly available cloud storage service provided by AWS. One of its powerful features is the ability to host static websites directly from an S3 bucket, making it an excellent choice for developers looking for a cost-effective and serverless hosting solution.
 
 In this step-by-step AWS project, we will walk through the process of deploying a static website on Amazon S3. This involves creating an S3 bucket, configuring it for website hosting, setting up permissions, and making the site publicly accessible. Additionally, for enhanced performance and security, we can integrate Amazon CloudFront (a Content Delivery Network), enable HTTPS using AWS Certificate Manager (ACM), and configure Route 53 for a custom domain.
 
