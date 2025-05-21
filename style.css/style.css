@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color:black;
+    --text-dark:black;
+    --text-light:rgba(0, 0, 0, 0.227);
+
+    --max-width:1200px;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+input::placeholder{
+    color:var(--text-light)
+}
+
+body{
+    width: 100%;
+    font-family:'Times New Roman', Times, serif;
+    background-image: url(https://koddi.com/wp-content/uploads/2020/01/Understanding-Solo-Travelers-974x511.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    position: absolute;
+    top: 0%;
+    left: 50;
+    transform: translateX(-50);
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 2rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav_logo a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family:sans-serif;
+}
+
+.nav_links{
+    list-style: none;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+.nav_links .link:hover{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color:red;
+    border: none;
+    outline:none;
+    border-bottom: 2px solid var(--text-dark);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav_links .links:hover{
+    color:red;
+}
+
+.search_box{
+    padding:10px;
+    border-bottom: 2px solid var(--text-dark);
+}
+
+.search_box input{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:transparent;
+    outline:none;
+    border:none;
+}
+
+.search_box i:hover{
+    color: var(--text-dark);
+    font-size:  1rem;
+    cursor: pointer;
+    background-color: var(--text-light);
+
+}
+
+.container{
+    display: flex;
+    min-height: 60vh;
+    margin: auto;
+    padding: 2rem;
+    max-width: var(--max-width);
+    padding-top: 100px;
+    position: relative;
+}
+
+.container_left, .container_right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container_left .content{
+    max-width: 400px;
+    display: grid;
+    gap: 1rem;
+}
+
+.content h1{
+    font-size: 4rem;
+    line-height: 4rem;
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.content p{
+    color: var(--primary-color);
+
+}
+
+.btns{
+    display: flex;
+    gap:1rem;
+
+}
+
+.btns button{
+    padding:1rem 1rem;
+    color: var(--text-dark);
+    font-size: 1rem;
+    background-color: transparent;
+    outline:none; 
+    border: 2px solid var(--text-dark);
+    border-radius: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.read_more:hover{
+    background-color: var(--text-light);
+    color: var(--text-dark);
+}
+
+button.Our_Blog:hover{
+    background-color: var(--text-light);
+
+}
+
+.chevrons{
+    display: flex;
+    gap: 1rem;
+}
+
+.chevrons span{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    font-size: 2rem;
+    color: var(--text-dark);
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    border: 2px solid var(--text-dark);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chevrons span:hover{
+    background-color: var(--text-light);
+}
+
+.container_right{
+    justify-content: flex-end;
+}
+
+form{
+    display: grid;
+    width: 350px;
+    background-color: var(--text-light);
+    border-radius: 10px;
+    color: var(--text-dark);
+}
+
+form h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+.form__group {
+    display: grid;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+.form__group label{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.form__group input{
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--text-dark);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--text-light);
+    background-color: transparent;
+}
+
+form button{
+    margin-top: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color:rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.341)
+}
+
+form button:hover{
+    background-color: var(--text-light);
+}
+
+.bottom_tracker{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.bottom_tracker span{
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.79);
+}
+
+.bottom_tracker span:nth-child(2) {
+    background-color: var(--text-dark);
+}
+.bottom_tracker span:hover{
+    background-color:var(--text-dark);
+}
