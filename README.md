@@ -71,10 +71,11 @@ Simply type **Route 53,** and you should see the service
 **Reasons for not working as expected :**
 -----------------------------------------
 
-*   **S3 Static Website Hosting Requires Bucket Name to Match the Domain Name
-    **When you host a **static website** on Amazon S3 and want to use a **custom domain name** (e.g., `example.com`), your **S3 bucket name must exactly match your domain name** (`example.com` or `[www.example.com](http://www.example.com).)`[).](http://www.example.com).)
-*   **Route 53 Won’t Automatically Link to an Arbitrary S3 Bucket
-    **Route 53 acts as a **DNS service**, mapping domain names to resources (like S3, EC2, CloudFront).
+*   S3 Static Website Hosting Requires Bucket Name to Match the Domain Name
+    **When you host a **static website** on Amazon S3 and want to use a **custom domain name** (e.g., `example.com`), your **S3 bucket name must exactly match your domain name** (`example.com` or `[www.example.com](http://www.example.com).)`[).](http://www.example.com).)**
+    
+*   Route 53 Won’t Automatically Link to an Arbitrary S3 Bucket
+    **Route 53 acts as a **DNS service**, mapping domain names to resources (like S3, EC2, CloudFront).**
     If your bucket name does not match your domain, you **cannot directly create an alias record** in Route 53 pointing to the S3 website endpoint.
 
 ![Providing name for S3 Bucket](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*dziYfroi5Y-R5RH7t_QtTg.jpeg)
